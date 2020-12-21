@@ -34,8 +34,9 @@ docker logs demo
 
 5.访问 http://localhost:8080/app/ok.html
 
-"wget https://mirrors.cnnic.cn/apache/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.tar.gz \t
+构建基础tomcat镜像
+>wget https://mirrors.cnnic.cn/apache/tomcat/tomcat-8/v8.5.37/bin/apache-tomcat-8.5.37.tar.gz \t
 && tar -xzf apache-tomcat-8.5.37.tar.gz        
- && mkdir -p apache-tomcat-8.5.37/conf/Catalina/localhost     
-     && rm -rf apache-tomcat-8.5.37/webapps/ROOT        
-      && sed -i '$i\\\t<CookieProcessor className=\\\"org.apache.tomcat.util.http.LegacyCookieProcessor\\\" />' apache-tomcat-8.5.37/conf/context.xml"
+&& mkdir -p apache-tomcat-8.5.37/conf/Catalina/localhost     
+&& rm -rf apache-tomcat-8.5.37/webapps/ROOT        
+&& sed -i '$i\\\t<CookieProcessor className=\\\"org.apache.tomcat.util.http.LegacyCookieProcessor\\\" />' apache-tomcat-8.5.37/conf/context.xml"
