@@ -6,6 +6,7 @@ package winnow.ak.study.state;
  */
 public class SuccessState implements StatePattern {
 
+    @Override
     public void returnState() {
         System.out.println("success do action ...");
     }

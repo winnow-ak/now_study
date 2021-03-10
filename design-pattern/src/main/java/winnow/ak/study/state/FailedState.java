@@ -7,6 +7,7 @@ package winnow.ak.study.state;
  */
 public class FailedState implements StatePattern {
 
+    @Override
     public void returnState() {
         System.out.println(" failed do action ...");
     }

@@ -10,6 +10,9 @@
                http://www.springframework.org/schema/aop
                https://www.springframework.org/schema/aop/spring-aop.xsd">
 
+    <!--代理 start-->
     <bean id="smsServiceImpl" class="winnow.ak.study.proxy.processor.SmsServiceImpl"  />
     <bean id="smsProxy" class="winnow.ak.study.proxy.processor.SmsProxy"  />
+    <!--代理 end -->
+    <bean id="messageListener" class="winnow.ak.study.listener.MessageListener"  />
 </beans>
