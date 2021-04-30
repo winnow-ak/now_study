@@ -30,9 +30,13 @@ public class IPayService implements ApplicationListener<ContextRefreshedEvent> {
         }
     }
 
+
+
+
     public void pay(String type) {
         if (iPayMap !=null){
             iPayMap.get(type).pay();
         }
     }
+
 }
