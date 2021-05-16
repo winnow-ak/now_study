@@ -1,4 +1,4 @@
-package winnow.ak.study.concurrent;
+package winnow.ak.study.juc;
 
 
 import java.util.concurrent.*;
