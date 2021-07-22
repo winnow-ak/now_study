@@ -14,6 +14,8 @@ public class CountDownLatchDemo {
         CountDownLatch doneSignal = new CountDownLatch(N);
         CountDownLatch startSignal = new CountDownLatch(1);//开始执行信号
 
+
+        System.out.println("sssss");
         for (int i = 1; i <= N; i++) {
             new Thread(new Worker(i, doneSignal, startSignal)).start();//线程启动了
         }

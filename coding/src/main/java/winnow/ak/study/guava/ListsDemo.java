@@ -11,11 +11,13 @@ import java.util.List;
 public class ListsDemo {
 
     //分隔
-    private void  partition(){
-        List<Integer> list = Lists.newArrayList(1,2,3,4,5,6,7,8);
+    private void partition() {
+        List<Integer> list = Lists.newArrayList(1, 2, 3, 4, 5, 6, 7, 8);
 
         List<List<Integer>> partition = Lists.partition(list, 2);
 
         System.out.println(partition.size());
     }
+
+
 }
